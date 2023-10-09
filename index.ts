@@ -31,7 +31,7 @@ const beemlog = (
     ...logs: any[]
 ) => {
     if (currentConfig[logLevel]) {
-        console.log(...logs);
+        console.log(`${logLevel}: `, ...logs);
     }
 };
 
